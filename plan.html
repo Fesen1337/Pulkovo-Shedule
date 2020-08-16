@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+		*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: "Roboto", sans-serif;
+}
+	.grid {
+	display: grid;
+	}
+@media (min-width: 640px) {
+	.grid {
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(3,1fr);
+		grid-gap: 40px;
+	}
+	.grid:not(:first-child){
+		margin: 30px 0;
+	}
+}
+
+.grid > * {
+	background-color: transparent;
+	border: 1px solid #212941;
+	border-radius: 5px;
+
+	color: #ffffff;
+	font-size: 18px;
+	font-family: roboto;
+}
+
+.grid div:nth-child(1){
+	grid-column-start: 1;
+	grid-column-end: 7;
+	background: none;
+	border: none;
+}
+.grid div:nth-child(2){
+	grid-row:2/4;
+}
+.grid div:nth-child(3){
+	grid-column:2/4;
+}
+.grid div:nth-child(4){
+	grid-row:3;
+	grid-column:2/4;
+}
+.grid div:nth-child(5){
+	grid-column:4/6;
+}
+.grid div:nth-child(6){
+	grid-row:3;
+	grid-column:4/6;
+}
+img{
+	left: 0;
+	width: 100%;
+}
+.gg{
+	text-align: center;
+	align-items: center;
+
+}
+.bl{
+	font-style: normal;
+	font-weight: 200;
+	font-size: 18px;
+	color: #000000;
+}
+.bl2{
+	color: rgba(245, 204, 210, 1);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+}
+.bl1{
+	color: #32295E;	
+	font-style: normal;
+	font-weight: bold;
+	font-size: 96px;
+
+}
+
+
+
+	</style>
+
+</head>
+<body>
+<div class="grid">
+	<div class="hpc"><img src="img/substract.png"></div>
+	<div class="gg"><span class="bl bl1">Пр</span></div>
+	<div class="gg"><span class="bl bl2">Управление безопасностью полетов</span></div>
+	<div class="gg"><span class="bl">программа повышения квалификации</span></div>
+	<div class="gg">
+		<i class="fa fa-check" aria-hidden="true"></i>
+		<span class="bl">пара закончена</span>
+	</div>
+	<div class="gg"><span class="bl">Попова И.О.</span></div>
+</div>
+</body>
+</html>
